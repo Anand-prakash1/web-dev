@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table {
+        margin: auto;
+        border: 2px solid rgb(255, 255, 255);
+        border-collapse: collapse;
+        background-color: black;
+        color: white;
+    }
+
+    caption {
+        background-color: black;
+        color: white;
+        padding: 10px;
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+
+    th,
+    td {
+        border: 1px solid rgb(255, 255, 255);
+        padding: 8px;
+        text-align: center;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        margin: 0;
+    }
+
+    form,
+    table {
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    div {
+        margin-bottom: 10px;
+    }
+
+    label,
+    input,
+    select,
+    textarea {
+        display: inline-block;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <span>
+        <table>
+            <caption>Student Information</caption>
+            <tr>
+                <td rowspan="7"><b>Info</b></td>
+            </tr>
+            <tr>
+                <td rowspan="2"><b>Name</b></td>
+                <td colspan="2"><b>Address</b></td>
+            </tr>
+            <tr>
+                <td><b>city</b></td>
+                <td><b>House</b></td>
+            </tr>
+            <tr>
+                <td>A</td>
+                <td>Delhi</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>B</td>
+                <td>Mumbai</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>C</td>
+                <td>Kolkata</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>D</td>
+                <td>Pune</td>
+                <td>4</td>
+            </tr>
+        </table>
+    </span>
+    <br>
+    <hr>
+    <h2>Recreate the following form using HTML :</h2>
+    <form action="/server">
+        <div>
+            <label for="name"><b>Name:</b></label>
+            <input type="text" placeholder="Enter name" name="name" id="name">
+        </div>
+        <div>
+            <b>Sex:</b>
+            <input type="Radio" value="Male" id="male" name="q">
+            <label for="male">Male: </label>
+            <input type="Radio" value="Female" id="female" name="q">
+            <label for="female">Female</label>
+            <input type="Radio" value="Others" id="other" name="q">
+            <label for="other">Others</label>
+        </div>
+        <div>
+            <b>Country: </b>
+            <label for="country"></label>
+            <select name="country" id="country">
+                <option value="" selected>Select an option</option>
+                <option value="">India</option>
+                <option value="">USA</option>
+                <option value="">China</option>
+            </select>
+        </div>
+        <div>
+            <p style="text-align: left;">Message: </p>
+            <textarea rows="10" cols="50">
+        Your text here...
+        </textarea>
+        </div>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</body>
+
+</html>
