@@ -1,0 +1,33 @@
+/* Apply a custom font to the entire body */
+body {
+    font-family: Courier New;
+}
+
+/* Style for the main heading with blue color */
+#heading {
+    color: #1b74e4;
+}
+
+/* Style for the Login button with border and background color */
+#login {
+    border: 2px solid black;
+    background-color: aqua;
+}
+
+/* Style for the Register button with similar border and background color as Login */
+#register {
+    border: 2px solid black;
+    background-color: aqua;
+}
+
+/* Style for the search input box with border and centered text */
+#search {
+    border: 1px solid black;
+    text-align: center;
+}
+
+/* Style for the button next to the search input, with black background and white text */
+#searchbutton {
+    background-color: black;
+    color: white;
+}
