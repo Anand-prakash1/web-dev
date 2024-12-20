@@ -1,0 +1,94 @@
+body > div {
+    display: flex;
+    align-items: flex-start; 
+}
+
+h1{
+    text-align: center;
+    background-color: yellow;
+}
+
+#main{
+    height: 500px;
+    width: 250px;
+    border: 2px solid black;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-color: silver;
+    margin: 0;
+}
+
+#outer{
+    height: 200px;
+    width: 70px;
+    border: 2px solid black;
+    position: relative;
+    background-color: rgb(78, 116, 144);
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#inner{
+    height: 50px;
+    width: 50px;
+    border: 2px solid black;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.red{
+    background-color: rgb(0, 0, 0);
+}
+
+.yellow{
+    background-color: rgb(0, 0, 0);
+}
+
+.green{
+    background-color: rgb(8, 8, 8);
+}
+
+#flash{
+    position: absolute;  
+    top: 15px;         
+    right: -25px;     
+    height: 10px;
+    width: 10px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: white;
+}
+
+#flash:hover{
+    background-color: rgb(255, 255, 0);
+}
+
+#mini{
+    height: 10px;
+    width: 10px;
+    background-color: grey;
+    border-radius: 50%;
+    margin: 40%;
+}
+
+#main > p{
+    text-align: center;
+    margin: 230px;
+    margin-left: 85px;
+}
+
+#para {
+    width: 300px;      /* Set a fixed width for the paragraph */
+    margin-right:215px; /* Space between #main and #para */
+    background-color: rgb(95, 95, 87);
+    color: white;
+}
+
+#para > pre{
+    width: 300px;      /* Set a fixed width for the paragraph */
+    margin-right: 20px; /* Space between #main and #para */
+    background-color: rgb(95, 95, 87);
+    color: white;
+}
